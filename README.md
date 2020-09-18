@@ -1,7 +1,5 @@
 # Churn-emails-using-Python
 In this project, i am going to showcase how to read, sort, count and to do many such things using Python programming language.
-#!/usr/bin/env python
-# coding: utf-8
 
 # To have access to your emails using Python or web console or Linux system, export your mailbox data in .Py, or .txt or excel or .html or .json format and store it in your system or upload it to the jupyter notebook. Emails can be accessed either with the file name or file path in your system
 # 
