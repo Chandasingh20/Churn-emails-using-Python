@@ -5,7 +5,7 @@ To have access to your emails using Python or web console or Linux system, expor
 
 Let's see how and what can be done with just our mailbox:
 
-# Dataset
+## Dataset
 I have a text file which records mail activity from various individuals in an open source project development team. Use the web console or Linux system or Jupyter Notebook to open the file. Below is the file location
 
 cat /cxldata/datasets/project/mbox-short.txt
@@ -19,7 +19,7 @@ tail -n 15 /cxldata/datasets/project/mbox-short.txt
 
 These files are in a standard format for a file containing multiple mail messages. The lines which start with "From " separate the messages and the lines which start with "From:" are part of the messages.
 
-# Count the Number of Lines
+## Count the Number of Lines
 If we know the file is relatively small compared to the size of our main memory, we can read the whole file into one string using the read method on the file handle. Example -
 
 fhand = open('/cxldata/datasets/project/mbox-short.txt') 
@@ -43,7 +43,7 @@ print("number_of_lines:",count)
 
 So, the above code shows there are 1910 number of lines in my mailbox.
 
-# Count the Number of Subject Lines
+## Count the Number of Subject Lines
 We use the string method startswith to select only those lines with the desired prefix.
 
 The below code prints the lines starting with From:
@@ -71,7 +71,7 @@ def count_number_of_lines():
 count_number_of_lines()
 
 
-# Find Average Spam Confidence
+## Find Average Spam Confidence
 In the above exercise, we saw a couple of examples of startswith. Let's do one more hands-on with startswith
 
 INSTRUCTIONS
@@ -97,7 +97,7 @@ def average_spam_confidence():
 average_spam_confidence()
 
 
-# Find Which Day of the Week the Email was sent
+## Find Which Day of the Week the Email was sent
 
 Write a function find_email_sent_days which reads the file /cxldata/datasets/project/mbox-short.txt and categorizes each mail message by which day of the week the email was sent.
 To do this do the following:
@@ -124,7 +124,7 @@ def find_email_sent_days():
 find_email_sent_days()
 
 
-# Count Number of Messages From Each Email Address
+## Count Number of Messages From Each Email Address
 Write a function count_message_from_email which reads the file /cxldata/datasets/project/mbox-short.txt.
 
 This function builds a histogram using a dictionary to count how many messages have come from each email address and returns the dictionary.
@@ -145,7 +145,7 @@ def count_message_from_email():
 print(count_message_from_email())
 
 
-# Count Number of Messages From Each Domain
+## Count Number of Messages From Each Domain
 Write a function count_message_from_domain which reads the file /cxldata/datasets/project/mbox-short.txt.
 
 This function builds a histogram using a dictionary to count how many messages have come from each domain(Instead of from email address), and returns the dictionary.
